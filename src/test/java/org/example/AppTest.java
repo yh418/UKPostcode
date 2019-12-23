@@ -17,7 +17,8 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue(HTTPutil.getInstance().validate("CB3 9AN"));
+        assertTrue(HTTPutil.getInstance().validate("CB3 0FA"));
         assertFalse(HTTPutil.getInstance().validate("AAA AAA"));
+        assertFalse(HTTPutil.getInstance().validate(null));
     }
 }

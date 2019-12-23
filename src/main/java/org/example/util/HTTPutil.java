@@ -102,7 +102,7 @@ public class HTTPutil {
             if (Double.compare(200d, json.getStatus()) == 0){
                 List<Map<String, String>> result = (List<Map<String, String>>) json.getResult();
                 for (Map<String,String> item : result) {
-                    Map<String, String> record = new HashMap<String, String>();
+                    Map<String, String> record = new HashMap<>();
                     record.put("postcode", item.get("postcode"));
                     record.put("country", item.get("country"));
                     record.put("region", item.get("region"));
